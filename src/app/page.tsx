@@ -9,17 +9,17 @@ import GeneralFaqSection from '@/sections/home/GeneralFaqSection'
 import PartnersMarquee from '@/sections/home/PartnersMarquee'
 
 export default function Page() {
-  return (
-    <>
-      <HeroSection />
-      <AboutSection />
-      <ThumbnailSection />
-      <BusinessFaqSection />
-      <PlanSection />
-      <ProcessSection />
-      <PartnersMarquee />
-      <BottomBannerSection />
-      <GeneralFaqSection />
-    </>
-  )
+return (
+<>
+<HeroSection />
+<AboutSection />
+<ThumbnailSection />
+<BusinessFaqSection />
+<PlanSection />
+<ProcessSection />
+<PartnersMarquee />
+<BottomBannerSection />
+<GeneralFaqSection />
+</>
+)
 }
