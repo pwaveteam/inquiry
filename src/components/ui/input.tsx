@@ -1,3 +1,5 @@
+"use client"
+
 import * as React from "react"
 import { cn } from "@/lib/utils"
 
@@ -13,6 +15,7 @@ className={cn(
 "disabled:cursor-not-allowed disabled:opacity-50",
 "file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-[#333]",
 "dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200 dark:placeholder:text-neutral-500",
+"dark:focus-visible:border-[#80aaff] dark:focus-visible:ring-[#80aaff]",
 "md:text-sm",
 className
 )}
