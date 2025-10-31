@@ -10,7 +10,6 @@ import { Menu, X } from 'lucide-react'
 const menus = [
 { name: '서비스 소개', href: '/service' },
 { name: '포트폴리오', href: '/portfolio' },
-{ name: '문의하기', href: '/contact' }
 ]
 
 export default function Header() {
@@ -63,7 +62,7 @@ isActive(menu.href) ? 'text-[#003090]' : 'text-gray-700 hover:text-[#003090]'
 ))}
 <div className="pl-[8px] flex items-center gap-2">
 <Button asChild variant="primary" className="px-[23px] py-[11px] text-[15px]">
-<Link href="/estimate">스마트 견적</Link>
+<Link href="/contact">문의하기</Link>
 </Button>
 </div>
 </nav>
@@ -106,8 +105,8 @@ isActive(menu.href) ? 'text-[#003090]' : 'text-[#565C6B] hover:text-[#003090]'
 </Link>
 ))}
 <Button asChild variant="primary" className="w-full mt-2 py-[11px] text-[15px]">
-<Link href="/estimate" onClick={() => setIsOpen(false)}>
-스마트 견적
+<Link href="/contact" onClick={() => setIsOpen(false)}>
+문의하기
 </Link>
 </Button>
 </div>

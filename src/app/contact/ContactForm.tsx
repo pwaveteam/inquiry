@@ -122,7 +122,7 @@ const formOptions=[
 '기타'
 ]
 const planOptions=['모두 준비됨','일부만 있음','준비 안됨']
-const budgetOptions=['100만원 이내','300만원 이내','500만원 이내','1000만원 이하','1000만원 이상','협의 필요']
+const budgetOptions = ['100만원 이하', '100~500만원', '500~1,500만원', '1,500~3,000만원', '3,000만원 이상']
 
 const renderDropdown=(type:'type'|'form'|'budget',options:string[],ref:React.RefObject<HTMLDivElement|null>)=>{
 const selected=form[type]
