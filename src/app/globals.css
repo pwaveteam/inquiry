@@ -115,11 +115,8 @@
   --sidebar-ring: oklch(0.552 0.016 285.938);
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
 
+@layer base {
   body {
     @apply bg-background text-foreground;
     font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -134,66 +131,83 @@
   }
 
   .section-label {
-    @apply text-[50px] font-bold leading-[1.3em] tracking-[-0.019em] text-left text-gray-900 mb-[60px];
+    @apply text-[32px] md:text-[50px] font-bold leading-[1.3em] tracking-[-0.019em] text-left text-gray-900 mb-[40px] md:mb-[60px];
   }
   
   .section-label-w {
-    @apply text-[50px] font-bold leading-[1.3em] tracking-[-0.019em] text-left text-white mb-[60px];
+    @apply text-[32px] md:text-[50px] font-bold leading-[1.3em] tracking-[-0.019em] text-left text-white mb-[40px] md:mb-[60px];
   }
 
   .section-heading {
-    @apply text-[30px] font-[600] leading-[1.5em] tracking-[-0.019em] text-center text-[#313639] mb-[24px];
+    @apply text-[22px] md:text-[30px] font-[600] leading-[1.5em] tracking-[-0.019em] text-center text-[#313639] mb-[18px] md:mb-[24px];
   }
     
   .section-heading-w {
-    @apply text-[30px] font-[500] leading-[1.5em] tracking-[-0.019em] text-white mb-[24px];
+    @apply text-[22px] md:text-[30px] font-[500] leading-[1.5em] tracking-[-0.019em] text-center text-white mb-[18px] md:mb-[24px];
   }
   
   .section-description {
-    @apply text-[20px] leading-[1.5em] tracking-[-0.019em] text-center text-[#565C6B] mb-[48px];
+    @apply text-[16px] md:text-[20px] leading-[1.5em] tracking-[-0.019em] text-center text-[#565C6B] mb-[32px] md:mb-[48px];
   }
   
   .section-description-w {
-    @apply text-[20px] leading-[1.5em] tracking-[-0.019em] text-white/80 mb-[48px];
+    @apply text-[16px] md:text-[20px] leading-[1.5em] tracking-[-0.019em] text-center text-white/80 mb-[32px] md:mb-[48px];
   }
 
   .subtitle {
-    @apply text-[19px] leading-[1.5em] tracking-[-0.019em] font-semibold text-[#2F3A56] text-left;
+    @apply text-[16px] md:text-[19px] leading-[1.5em] tracking-[-0.019em] font-semibold text-[#2F3A56] text-left;
   }
   
   .subtitle-w {
-    @apply text-[19px] leading-[1.5em] tracking-[-0.019em] font-semibold text-white text-left;
+    @apply text-[16px] md:text-[19px] leading-[1.5em] tracking-[-0.019em] font-semibold text-white text-left;
   }
 
   .description {
-    @apply text-[19px] leading-[1.5em] tracking-[-0.019em] text-left text-[#565C6B];
+    @apply text-[16px] md:text-[19px] leading-[1.5em] tracking-[-0.019em] text-left text-[#565C6B];
   }
   
   .description-w {
-    @apply text-[19px] leading-[1.5em] tracking-[-0.019em] text-left text-white/80;
+    @apply text-[16px] md:text-[19px] leading-[1.5em] tracking-[-0.019em] text-left text-white/80;
   }
   
   .banner-title-w {
-    @apply text-[36px] leading-[1.3em] tracking-[-0.019em] font-semibold text-white/80 text-center;
+    @apply text-[26px] md:text-[36px] leading-[1.3em] tracking-[-0.019em] font-semibold text-white/80 text-center;
   }
 
   .banner-subtitle-w {
-    @apply text-[28px] leading-[1.3em] tracking-[-0.019em] text-white/60 text-center;
+    @apply text-[20px] md:text-[28px] leading-[1.3em] tracking-[-0.019em] text-white/60 text-center;
   }  
 
   .service-title {
-    @apply text-[45px] leading-[1.3em] tracking-[-0.019em] font-semibold text-center text-white;
+    @apply text-[30px] md:text-[45px] leading-[1.3em] tracking-[-0.019em] font-semibold text-center text-white;
   }
   
   .service-subtitle {
-    @apply text-[23px] leading-[1.3em] tracking-[-0.019em] text-center text-white/60;
+    @apply text-[18px] md:text-[23px] leading-[1.3em] tracking-[-0.019em] text-center text-white/60;
   }
 
   .service-content {
-    @apply text-[23px] leading-[1.5em] tracking-[-0.019em] text-center text-white mb-3;
+    @apply text-[18px] md:text-[23px] leading-[1.5em] tracking-[-0.019em] text-center text-white mb-3;
   }
   
   .service-description {
-    @apply text-[18px] leading-[1.5em] tracking-[-0.019em] text-center text-gray-300;
+    @apply text-[15px] md:text-[18px] leading-[1.5em] tracking-[-0.019em] text-center text-gray-300;
+  }
+
+  .title-main {
+    @apply text-[40px] md:text-[70px] font-bold leading-[1.2em] tracking-[-0.02em] text-gray-900 text-center;
+  }
+
+  .title-sub {
+    @apply text-[20px] md:text-[28px] font-medium leading-[1.4em] text-[#555] text-center;
+  }
+
+  .paragraph {
+    @apply text-[16px] md:text-[18px] leading-[1.7em] text-[#444] text-left;
+  }
+
+  .paragraph-w {
+    @apply text-[16px] md:text-[18px] leading-[1.7em] text-white/80 text-left;
   }
 }
+

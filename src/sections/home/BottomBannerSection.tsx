@@ -22,7 +22,7 @@ export default function BottomBannerSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }}
-          className="text-[50px] leading-[1.3] tracking-[-0.03em] mb-[30px] drop-shadow-[0_3px_10px_rgba(0,0,0,0.8)] font-normal text-white"
+          className="text-[30px] md:text-[50px] leading-[1.3] tracking-[-0.03em] mb-[30px] drop-shadow-[0_3px_10px_rgba(0,0,0,0.8)] font-normal text-white"
         >
           비용 부담 없이 시작하는 완성형 웹사이트<br />
           <span className="font-semibold">기획부터 개발, 사업의 전략까지</span>
@@ -33,7 +33,7 @@ export default function BottomBannerSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }}
-          className="text-[26px] leading-[1.3] tracking-[-0.03em] text-white/95 mb-[40px] drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]"
+          className="text-[18px] md:text-[26px] leading-[1.3] tracking-[-0.03em] text-white/95 mb-[40px] drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]"
         >
           내 사업을 알릴 브랜드 홈페이지, 사업 아이디어를 담아낼 플랫폼<br />
           사업을 이해하는 전문가의 전략이 담겨야 지속가능한 서비스가 됩니다.

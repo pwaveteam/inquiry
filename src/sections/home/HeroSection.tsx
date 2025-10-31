@@ -45,14 +45,15 @@ animate={{ opacity: 1, y: 0 }}
 transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
 className="relative z-[2] max-w-[900px] w-full px-4"
 >
-<h2 className="text-[50px] leading-[1.3] tracking-[-0.03em] mb-[30px] drop-shadow-[0_3px_10px_rgba(0,0,0,0.8)] font-normal">
-1명 인건비로 CTO부터 QA까지<br />
-<span className="font-semibold">기획부터 개발까지, 모든 과정을 한 번에</span>
+<h2 className="text-[30px] md:text-[50px] leading-[1.3] tracking-[-0.03em] mb-[30px] drop-shadow-[0_3px_10px_rgba(0,0,0,0.8)] font-normal">
+  1명 인건비로 CTO부터 QA까지<br />
+  <span className="font-semibold">기획부터 개발까지, 모든 과정을 한 번에</span>
 </h2>
 
-<p className="text-[26px] leading-[1.3] tracking-[-0.03em] text-white/95 mb-[40px] drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]">
-전략과 기술을 연결해, 비즈니스 성과를 극대화합니다.
+<p className="text-[18px] md:text-[26px] leading-[1.3] tracking-[-0.03em] text-white/95 mb-[40px] drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]">
+  전략과 기술을 연결해, 비즈니스 성과를 극대화합니다.
 </p>
+
 <div className="text-center space-x-[20px]">
 <Button asChild variant="primary">
 <a href="#contact">홈페이지 개발 문의</a>
