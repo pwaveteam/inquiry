@@ -10,23 +10,24 @@ const sns=[
 
 return(
 <footer className="w-full bg-black text-white border-t border-white/10 pt-[60px] pb-[40px] max-md:pt-[40px] max-md:pb-[30px]">
-<div className="max-w-[1300px] mx-auto px-6 flex flex-col md:flex-row justify-between gap-10 max-md:gap-6">
+<div className="max-w-[1100px] mx-auto px-6 flex flex-col md:flex-row justify-between gap-10 max-md:gap-6">
 <div>
-<p className="text-[13px] md:text-[15px] text-white/60 leading-[1.6]">
-경기 수원시 영통구 법조로 25, SK뷰레이크 25F<br/>
+<p className="text-[13px] md:text-[14px] text-white/40 leading-[1.7]">
+24, Gwanggyohosu-ro 152beon-gil, Yeongtong-gu, Suwon-si,<br/>
+Gyeonggi-do, Republic of Korea<br/>
 info@pulsewave.kr · 070-4149-3331
 </p>
 </div>
 <div className="flex items-start gap-5">
 {sns.map((item,i)=>(
-<Link key={i} href={item.href} target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-[#003090] transition-colors duration-300">
+<Link key={i} href={item.href} target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-[#003090] transition-colors duration-300">
 {item.icon}
 </Link>
 ))}
 </div>
 </div>
-<div className="max-w-[1300px] mx-auto px-6 mt-[40px] max-md:mt-[30px] border-t border-white/10 pt-[20px]">
-<p className="text-[13px] md:text-[15px] text-white/40">© {new Date().getFullYear()} Pulsewave Co. All rights reserved</p>
+<div className="max-w-[1100px] mx-auto px-6 mt-[35px] max-md:mt-[25px] border-t border-white/10 pt-[18px]">
+<p className="text-[12px] md:text-[14px] text-white/30">© {new Date().getFullYear()} Pulsewave Co. All rights reserved</p>
 </div>
 </footer>
 )}

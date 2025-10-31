@@ -18,7 +18,7 @@ export interface PortfolioItem {
       strategy:
         '어두운 컬러톤과 유동적인 그래픽을 활용해 기술적 깊이와 미래지향적 이미지를 강조함\n스크롤 중심의 인터랙션과 섹션 전환 효과로 브랜드의 비전을 감각적으로 경험할 수 있도록 설계함',
       thumbnail: '/thumbnail/thumbnail-1.png',
-      detailImage: '/images/portfolio/detail-1.jpg',
+      detailImage: '/images/portfolio/detail1.jpg',
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ export interface PortfolioItem {
     strategy:
       '대규모 이미지 데이터를 효율적으로 로딩하기 위해 최적화된 필터링과 캐싱 구조를 적용함\n사용자 행동 기반 추천 알고리즘과 실시간 검색 기능을 결합해 탐색 경험을 강화함\n3D 뷰를 통해 브랜드별 쇼룸을 직관적으로 비교할 수 있도록 UX를 구성함',
     thumbnail: '/thumbnail/thumbnail-2.png',
-    detailImage: '/images/portfolio/detail-2.jpg',
+    detailImage: '/images/portfolio/detail2.jpg',
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ export interface PortfolioItem {
     strategy:
       '사용자가 로봇의 상태를 직관적으로 모니터링할 수 있도록 핵심 데이터를 시각적으로 우선 배치하고\n반응형 UI로 다양한 환경에서 동일한 사용 경험을 제공함\n실시간 알림과 상태 변화를 명확히 인지할 수 있도록 UX 중심으로 설계함',
     thumbnail: '/thumbnail/thumbnail-3.png',
-    detailImage: '/images/portfolio/detail-3.jpg',
+    detailImage: '/images/portfolio/detail3.jpg',
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ export interface PortfolioItem {
     strategy:
       '사용자 입력 데이터를 기반으로 제품 사양에 맞는 견적을 자동 산출하도록 설계함\n데이터 구조를 최적화해 견적 프로세스 속도를 향상시키고\n관리자가 실시간으로 결과를 확인하고 수정할 수 있는 UI를 구현함',
     thumbnail: '/thumbnail/thumbnail-4.png',
-    detailImage: '/images/portfolio/detail-4.jpg',
+    detailImage: '/images/portfolio/detail4.jpg',
   },
     {
       id: 5,
@@ -62,7 +62,7 @@ export interface PortfolioItem {
       strategy:
         '행정 문서, 교육 자료를 시각적으로 구조화하여 접근성을 높였습니다.',
       thumbnail: '/thumbnail/thumbnail-5.png',
-      detailImage: '/images/portfolio/detail-5.jpg',
+      detailImage: '/images/portfolio/detail5.jpg',
     },
     {
       id: 6,
@@ -73,7 +73,7 @@ export interface PortfolioItem {
       strategy:
         '기업 내 다양한 부서별 접근 권한을 통합하고, 워크플로우를 디지털화했습니다.',
       thumbnail: '/thumbnail/thumbnail-6.png',
-      detailImage: '/images/portfolio/detail-6.jpg',
+      detailImage: '/images/portfolio/detail6.jpg',
     },
     {
       id: 7,
@@ -84,7 +84,7 @@ export interface PortfolioItem {
       strategy:
         '컬러 모션과 인터랙션을 활용해 브랜드 콘셉트를 직관적으로 표현했습니다.',
       thumbnail: '/thumbnail/thumbnail-7.png',
-      detailImage: '/images/portfolio/detail-7.jpg',
+      detailImage: '/images/portfolio/detail7.jpg',
     },
     {
       id: 8,
@@ -95,7 +95,7 @@ export interface PortfolioItem {
       strategy:
         '전시 정보, 예약 기능을 통합하고, 시각적 몰입도를 높였습니다.',
       thumbnail: '/thumbnail/thumbnail-8.png',
-      detailImage: '/images/portfolio/detail-8.jpg',
+      detailImage: '/images/portfolio/detail8.jpg',
     },
     {
       id: 9,
@@ -106,7 +106,7 @@ export interface PortfolioItem {
       strategy:
         '데이터 기반 UX 설계로 정책 참여 경험을 향상시켰습니다.',
       thumbnail: '/thumbnail/thumbnail-9.png',
-      detailImage: '/images/portfolio/detail-9.jpg',
+      detailImage: '/images/portfolio/detail9.jpg',
     },
     {
       id: 10,
@@ -117,7 +117,7 @@ export interface PortfolioItem {
       strategy:
         'MVP 중심의 개발 접근 방식으로 빠른 피드백과 반복 개선을 가능하게 했습니다.',
       thumbnail: '/thumbnail/thumbnail-10.png',
-      detailImage: '/images/portfolio/detail-10.jpg',
+      detailImage: '/images/portfolio/detail10.jpg',
     },
     {
       id: 11,
@@ -128,7 +128,7 @@ export interface PortfolioItem {
       strategy:
         '의료 데이터 보안과 접근성을 모두 고려한 UX 설계를 적용했습니다.',
       thumbnail: '/thumbnail/thumbnail-11.png',
-      detailImage: '/images/portfolio/detail-1.jpg',
+      detailImage: '/images/portfolio/detail11.jpg',
     },
   ]
   
