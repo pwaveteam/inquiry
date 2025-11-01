@@ -22,8 +22,7 @@ initial={{opacity:0,y:60}}
 whileInView={{opacity:1,y:0}}
 transition={{duration:0.6,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
-className="text-[30px] md:text-[50px] leading-[1.3] tracking-[-0.03em] mb-[30px] drop-shadow-[0_3px_10px_rgba(0,0,0,0.8)] font-normal text-white"
->
+className="main-banner-title-w mb-6">
 비용 부담 없이 시작하는 완성형 웹사이트<br/>
 <span className="font-semibold">기획부터 개발, 사업의 전략까지</span>
 </motion.h2>
