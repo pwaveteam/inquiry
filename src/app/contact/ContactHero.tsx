@@ -44,11 +44,11 @@ transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}
 className="relative z-[2] max-w-[900px] w-full px-4"
 >
 <h3 className="banner-title-w mb-[30px]">
-비즈니스 목표와 요구사항을 기반으로<br />
-전문 컨설턴트가 무료로 상담해드립니다
+아직 아이디어가 명확하지 않아도 괜찮습니다.
 </h3>
 <p className="banner-subtitle-w">
-퍼스에 부담없이 문의주세요
+이런 것도 가능할까?” 망설여진다면, 지금 바로 편하게 물어보세요.<br />
+퍼스의 전문가가 함께 이야기 나눌 준비가 되어있습니다.
 </p>
 </motion.div>
 </motion.div>

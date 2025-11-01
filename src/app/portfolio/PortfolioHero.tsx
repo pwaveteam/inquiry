@@ -45,11 +45,11 @@ transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}
 className="relative z-[2] max-w-[900px] w-full px-4"
 >
 <h3 className="banner-title-w mb-[30px]">
-다양한 산업 분야에서 검증된<br />
-퍼스의 포트폴리오를 확인하세요.
+다양한 산업분야, 45개 이상의 프로젝트 수행<br />
+퍼스가 수행한 프로젝트 포트폴리오를 확인해 보세요.
 </h3>
 <p className="banner-subtitle-w">
-비공개 프로젝트를 포함하여<br />45개 이상의 프로젝트를 성공적으로 수행했습니다.
+기획부터 개발까지, 퍼스가 수행한 주요 프로젝트 사례를 소개합니다.
 </p>
 
 

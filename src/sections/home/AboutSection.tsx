@@ -23,8 +23,7 @@ transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
 viewport={{ once: true, amount: 0.3 }}
 className="section-heading"
 >
-전략이 기획으로, 디자인과 기술이 이어지는 팀<br />
-가치가 담긴 설계, 전략이 이끄는 프로덕트
+사업의 본질에 집중하는 전문가팀
 </motion.p>
 
 <motion.p
@@ -34,7 +33,8 @@ transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
 viewport={{ once: true, amount: 0.3 }}
 className="section-description"
 >
-디자인과 기술의 조화를 통해, 브랜드 가치를 높입니다.
+시장에 개발사는 많지만, 든든한 비즈니스 파트너를 찾는다면 퍼스가 정답입니다.<br />
+화려한 미사여구보다 견고한 결과물로 증명합니다.
 </motion.p>
 
 <motion.div
