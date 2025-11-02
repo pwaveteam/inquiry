@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { MousePointer, Settings, Target, ShieldCheck, MessageCircle } from 'lucide-react'
 
-export default function Philosophy(){
+export default function Philosophy() {
 const bgRef=useRef<HTMLDivElement>(null)
 const animRef=useRef<number|null>(null)
 
@@ -13,6 +13,7 @@ const container=bgRef.current
 const canvas=document.createElement('canvas')
 const ctx=canvas.getContext('2d')
 const dpr=Math.min(window.devicePixelRatio,1.5)
+
 const resize=()=>{
 canvas.width=window.innerWidth*dpr
 canvas.height=window.innerHeight*dpr
@@ -20,6 +21,7 @@ canvas.style.width='100%'
 canvas.style.height='100%'
 ctx?.scale(dpr,dpr)
 }
+
 resize()
 canvas.style.position='absolute'
 canvas.style.top='0'
@@ -27,6 +29,7 @@ canvas.style.left='0'
 canvas.style.zIndex='0'
 container.appendChild(canvas)
 if(!ctx)return
+
 const isMobile=window.innerWidth<768
 const centerX=window.innerWidth/2
 const centerY=isMobile?window.innerHeight/2.2:window.innerHeight/2
@@ -34,6 +37,7 @@ let time=0,lastTime=0
 const particleCount=isMobile?120:220
 const maxRadius=isMobile?Math.min(window.innerWidth,window.innerHeight)/3:Math.min(window.innerWidth,window.innerHeight)/2.5
 const spiralArms=4,rotationSpeed=0.08
+
 const particles=Array.from({length:particleCount}).map(()=>{const distanceFactor=Math.pow(Math.random(),0.5)
 const distance=distanceFactor*maxRadius
 const armIndex=Math.floor(Math.random()*spiralArms)
@@ -41,8 +45,10 @@ const armOffset=(armIndex/spiralArms)*Math.PI*2
 const spiralTightness=0.2
 const spiralAngle=Math.log(distance/5)/spiralTightness
 return{distance,angle:spiralAngle+armOffset,armIndex,size:1+Math.random()*1.2,opacity:0.3+Math.random()*0.7,speedFactor:0.8+Math.random()*0.4,color:{r:40+Math.random()*20,g:120+Math.random()*80,b:255-Math.random()*80}}})
+
 let frameSkip=0
-const animate=(timestamp:number)=>{animRef.current=requestAnimationFrame(animate)
+const animate=(timestamp:number)=>{
+animRef.current=requestAnimationFrame(animate)
 if(!lastTime)lastTime=timestamp
 const deltaTime=timestamp-lastTime
 lastTime=timestamp
@@ -54,7 +60,8 @@ ctx.beginPath()
 ctx.arc(centerX,centerY,3,0,Math.PI*2)
 ctx.fillStyle='rgba(255,255,255,0.9)'
 ctx.fill()
-for(const p of particles){const rotationFactor=1/Math.sqrt(p.distance/10)
+for(const p of particles){
+const rotationFactor=1/Math.sqrt(p.distance/10)
 p.angle+=rotationSpeed*rotationFactor*p.speedFactor*deltaTime*0.05
 const x=centerX+Math.cos(p.angle)*p.distance
 const y=centerY+Math.sin(p.angle)*p.distance
@@ -62,12 +69,15 @@ const pulseFactor=Math.sin((time*0.5+p.armIndex/spiralArms)*Math.PI*2)*0.3+0.7
 ctx.beginPath()
 ctx.arc(x,y,p.size*pulseFactor,0,Math.PI*2)
 ctx.fillStyle=`rgba(${p.color.r},${p.color.g},${p.color.b},${p.opacity*pulseFactor})`
-ctx.fill()}}
+ctx.fill()
+}}
 animRef.current=requestAnimationFrame(animate)
 window.addEventListener('resize',resize)
-return()=>{if(animRef.current)cancelAnimationFrame(animRef.current)
+return()=>{
+if(animRef.current)cancelAnimationFrame(animRef.current)
 window.removeEventListener('resize',resize)
-if(container.contains(canvas))container.removeChild(canvas)}},[])
+if(container.contains(canvas))container.removeChild(canvas)
+}},[])
 
 const items=[
 {label:'Usability',icon:MousePointer},
@@ -78,13 +88,25 @@ const items=[
 ]
 
 return(
-<section className="relative w-full text-white overflow-hidden font-[Inter] min-h-screen flex flex-col justify-center items-center bg-black">
+<section className="relative w-full text-white overflow-hidden min-h-screen flex flex-col justify-center items-center bg-black font-[Pretendard]">
 <div ref={bgRef} className="absolute inset-0"/>
 <div className="section-wrapper flex flex-col items-center text-center space-y-8 relative z-10">
-<motion.h2 initial={{opacity:0,y:40}} whileInView={{opacity:1,y:0}} transition={{duration:0.6}} viewport={{once:true}} className="service-title">
+<motion.h2
+initial={{opacity:0,x:-80}}
+whileInView={{opacity:1,x:0}}
+transition={{duration:0.7,ease:'easeOut'}}
+viewport={{once:true,amount:0.3}}
+className="section-label-w"
+>
 Philosophy
 </motion.h2>
-<motion.p initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} transition={{duration:0.6,delay:0.2}} viewport={{once:true}} className="service-subtitle">
+<motion.p
+initial={{opacity:0,y:40}}
+whileInView={{opacity:1,y:0}}
+transition={{duration:0.6,delay:0.15,ease:'easeOut'}}
+viewport={{once:true,amount:0.3}}
+className="section-description-w text-center"
+>
 퍼스는 사용성 기능성 정확성 보안 그리고 소통<br/>다섯 가지 가치의 균형으로 프로젝트의 본질을 완성합니다
 </motion.p>
 
@@ -117,4 +139,5 @@ Philosophy
 </div>
 </div>
 </section>
-)}
+)
+}

@@ -16,30 +16,34 @@ backgroundAttachment:'fixed'
 }}
 >
 <div className="absolute inset-0 bg-black/85"/>
-<div className="relative container-default text-center z-10 max-w-[900px] px-4">
+<div className="container-default relative flex flex-col items-center justify-center text-center text-white font-sans rounded-[36px] px-4 z-10">
+<div className="relative z-[2] w-full px-4">
 <motion.h2
 initial={{opacity:0,y:60}}
 whileInView={{opacity:1,y:0}}
-transition={{duration:0.6,ease:'easeOut'}}
+transition={{duration:0.8,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
-className="main-banner-title-w mb-6">
-비용 부담 없이 시작하는 완성형 웹사이트<br/>
-<span className="font-semibold">기획부터 개발, 사업의 전략까지</span>
+className="main-banner-title-w mb-[30px]"
+>
+아직 아이디어가 명확하지 않아도 괜찮습니다.<br />
+퍼스팀이 가장 합리적인 플랜을 제안해 드립니다.
 </motion.h2>
+
 <motion.p
 initial={{opacity:0,y:60}}
 whileInView={{opacity:1,y:0}}
-transition={{duration:0.6,delay:0.15,ease:'easeOut'}}
+transition={{duration:0.8,delay:0.15,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
-className="text-[18px] md:text-[26px] leading-[1.3] tracking-[-0.03em] text-white/95 mb-[40px] drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]"
+className="banner-subtitle-w mb-[40px]"
 >
-내 사업을 알릴 브랜드 홈페이지, 사업 아이디어를 담아낼 플랫폼<br/>
-사업을 이해하는 전문가의 전략이 담겨야 지속가능한 서비스가 됩니다.
+지금 바로 문의해보세요.<br />
+아이디어를 구체화하는 가장 빠른 길입니다.
 </motion.p>
+
 <motion.div
-initial={{opacity:0,y:50}}
+initial={{opacity:0,y:60}}
 whileInView={{opacity:1,y:0}}
-transition={{duration:0.6,delay:0.3,ease:'easeOut'}}
+transition={{duration:0.8,delay:0.3,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
 className="text-center space-x-[20px]"
 >
@@ -50,6 +54,7 @@ className="text-center space-x-[20px]"
 <a href="/portfolio">포트폴리오 보기</a>
 </Button>
 </motion.div>
+</div>
 </div>
 </section>
 )
